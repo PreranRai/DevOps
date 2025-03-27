@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps & GitHub Guide</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #24292e;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #58a6ff;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), 
+                        url('https://source.unsplash.com/1600x900/?technology,code') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            padding: 20px;
+        }
+
+        /* Content Section */
+        .container {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            margin: 20px auto;
+            max-width: 600px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card h2 {
+            color: #24292e;
+            margin-bottom: 10px;
+        }
+
+        /* Git Commands Section */
+        .commands {
+            padding: 50px;
+            text-align: center;
+        }
+
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 15px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background: #24292e;
+            color: white;
+        }
+
+        tr:hover {
+            background: #f1f1f1;
+        }
+
+        /* Call to Action */
+        .cta {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .cta a {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 12px 25px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .cta a:hover {
+            background: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #24292e;
+            color: white;
+            margin-top: 30px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">DevOps & GitHub</div>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">DevOps</a>
+            <a href="#">GitHub</a>
+            <a href="#">Git Commands</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        Mastering DevOps & GitHub with Essential Git Commands 🚀
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h2>🌍 What is DevOps?</h2>
+            <p>DevOps is a set of practices that combine software development and IT operations to improve collaboration and automation.</p>
+        </div>
+
+        <div class="card">
+            <h2>⚡ Why GitHub?</h2>
+            <p>GitHub is a powerful version control and collaboration platform that enables teams to manage their code efficiently.</p>
+        </div>
+    </div>
+
+    <div class="commands">
+        <h2>🔥 Essential Git Commands</h2>
+        <table>
+            <tr>
+                <th>Command</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><code>git init</code></td>
+                <td>Initialize a new Git repository</td>
+            </tr>
+            <tr>
+                <td><code>git clone &lt;repo-url&gt;</code></td>
+                <td>Clone a repository from GitHub</td>
+            </tr>
+            <tr>
+                <td><code>git status</code></td>
+                <td>Check the status of your changes</td>
+            </tr>
+            <tr>
+                <td><code>git add .</code></td>
+                <td>Stage all changes</td>
+            </tr>
+            <tr>
+                <td><code>git commit -m "message"</code></td>
+                <td>Commit changes with a message</td>
+            </tr>
+            <tr>
+                <td><code>git push origin main</code></td>
+                <td>Push commits to GitHub</td>
+            </tr>
+            <tr>
+                <td><code>git pull origin main</code></td>
+                <td>Pull the latest changes from GitHub</td>
+            </tr>
+            <tr>
+                <td><code>git branch</code></td>
+                <td>List all branches</td>
+            </tr>
+            <tr>
+                <td><code>git checkout -b new-branch</code></td>
+                <td>Create and switch to a new branch</td>
+            </tr>
+            <tr>
+                <td><code>git merge branch-name</code></td>
+                <td>Merge a branch into the current branch</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="cta">
+        <a href="#">Start Your DevOps Journey</a>
+    </div>
+
+    <footer>
+        &copy; 2025 DevOps & GitHub Guide | All Rights Reserved
+    </footer>
+
+</body>
+</html>
